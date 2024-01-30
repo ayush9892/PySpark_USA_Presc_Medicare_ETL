@@ -1,0 +1,6 @@
+{
+	"name": "LocalSHIR",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

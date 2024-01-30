@@ -1,0 +1,28 @@
+{
+	"name": "ls_sftp_localhost",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "Sftp",
+		"typeProperties": {
+			"host": "localhost",
+			"port": 22,
+			"skipHostKeyValidation": true,
+			"authenticationType": "SshPublicKey",
+			"userName": "AYUSH KUMAR",
+			"privateKeyContent": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_akeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "openSSH-SFTP",
+				"secretVersion": "54547add87a046639b77ad8b6241da64"
+			}
+		},
+		"connectVia": {
+			"referenceName": "LocalSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

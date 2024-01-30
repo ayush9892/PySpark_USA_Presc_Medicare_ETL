@@ -1,0 +1,15 @@
+{
+	"name": "ls_adls_synapselearningadls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://synapselearningadls.dfs.core.windows.net/"
+		},
+		"connectVia": {
+			"referenceName": "LocalSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

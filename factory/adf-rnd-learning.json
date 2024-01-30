@@ -1,0 +1,9 @@
+{
+	"name": "adf-rnd-learning",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "65950ca3-dd2f-4f43-9be7-865429472fd3",
+		"tenantId": "84c31ca0-ac3b-4eae-ad11-519d80233e6f"
+	}
+}
