@@ -74,6 +74,25 @@ Two different datasets were ingested from Local SFTP Server into Datalake Gen2. 
 6. Create a Pipeline, and use Copy Activity.
 
 
+### Transformation Requirements
+
+1. Calculate No. of zips in usa_cities_dimension file.
+2. Count number of distinct prescribers and sum total_claim_count assigned to each city.
+3. Do not report a city if no prescribers is assigned to it.
+4. Apply filter on prescribers only from 20 to 50 years of experience and rank the prescribers based on their total claim count for each state.
+
+
+### Transformation Steps:
+
+- For Bronze to Silver transformation:
+	1. Load the file into dataframe.
+	2. Select required columns, check for null values, clean and rename columns.
+ 	3. Write the clean files into silver layer in delta format. 
+- For silver to gold transformation:
+	1. Load the delta files into dataframes.
+ 	2. Perform the transformation and save it into gold layer container.
+
+
 # Used Technologies
 - Azure DataFactory
 - Azure Databricks (Pyspark)
